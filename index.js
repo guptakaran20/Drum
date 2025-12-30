@@ -7,8 +7,8 @@ button.forEach((btn) => {
     });
 });
 document.addEventListener("keydown", function (e) {
-     makeSound(e.key);
-     buttonAnimation(e.key);
+     makeSound(e.key.toLowerCase());
+    buttonAnimation(e.key.toLowerCase());
 });
 
 function makeSound(key){
@@ -51,3 +51,4 @@ function buttonAnimation(currentKey){
     },100);
 
 }
+
